@@ -1,0 +1,65 @@
+.nav-main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #232323;
+    border-bottom: 1px solid #b7b1b1;
+}
+
+.glider-scan-main-header {
+    color: #ffffff;
+    font-family: "Roboto";
+    font-size: 35px;
+}
+
+.main-logo-img {
+    height: 50px;
+    width: 150px;
+    margin-right: 5px;
+}
+.nav-main-header-icon-container {
+    display: flex;
+    align-items: center;
+}
+.nav-main-header-menu-icon {
+    color: #b7b1b1;
+    font-size: 32px;
+    margin-right: 18px;
+}
+.vinay-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+}
+.admin-name {
+    color: #ffffff;
+    font-size: 23px;
+    margin-right: 20px;
+}
+.vinay-profile-container {
+    display: flex;
+    /* align-items: center; */
+}
+.header-container {
+    display: flex;
+    flex-direction: column;
+}
+.pop-up-container {
+    background-color: transparent;
+    width: fit-content;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.nav-main-heading-profile-text {
+    color: #b7b1b1;
+    font-size: 25px;
+
+}
+.popup-button{
+    background-color:transparent;
+    border:none;
+}

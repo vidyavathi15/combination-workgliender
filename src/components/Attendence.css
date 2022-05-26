@@ -1,0 +1,71 @@
+.heading {
+    color: #ffffff;
+    text-align: left;
+}
+.bg-container {
+    display: flex;
+    flex-direction: column;
+    width:100vw;
+}
+.attendance-name{
+   background-color:rgb(49, 49, 51);
+   border-radius:6px;
+   border:none;
+   display:flex;
+   flex-direction: column;
+   background-size: cover;
+   margin-right:10px;
+   padding:0px;
+   height:30px;
+
+}
+.attendance-bg-container{
+    /* width:100vw; */
+    display:flex;
+    flex-direction:column;
+}
+.attendance-container{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-around;
+    width:100vw;
+}
+th {
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 8px;
+   
+    
+
+}
+table {
+    border: 1px solid #ffffff;
+    border-collapse: collapse;
+}
+.download-btn{
+    background-color: #ef5350;
+    color:white;
+    font-weight:800;
+    font-size:15px;
+   
+    height:30px;
+    width:100px;
+    border:none;
+}
+.right-container{
+    display:flex;
+    align-items: center;
+    margin-right: 30px;    
+}
+.popup-content{
+    background-color: #121212;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    padding:14px;
+}
+.close-container{
+    display: flex;
+    justify-content: space-between;
+    padding:14px;
+}
