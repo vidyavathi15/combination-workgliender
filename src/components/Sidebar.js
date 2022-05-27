@@ -5,7 +5,7 @@ import { MdDashboard, MdAddLocation, MdLocationOn, MdPeopleAlt } from 'react-ico
 import { FaCalendarDay } from 'react-icons/fa'
 import { RiVirusFill } from 'react-icons/ri'
 import { IoMdBriefcase } from 'react-icons/io'
-import Header from './Header'
+import LoginHeader from './LoginHeader'
 // import Attendence from './Attendence'
 
 function MenuIcons() {

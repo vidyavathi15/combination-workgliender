@@ -1,18 +1,26 @@
 import React from 'react'
 import './MainHeader.css'
 import { AiOutlineMenu } from 'react-icons/ai'
-import MenuIcons from './MenuIcons'
+import Sidebar from './Sidebar'
 import AllZones from './AllZones/AllZones'
 import Popup from 'reactjs-popup'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { Redirect } from 'react-router-dom'
 import Cookies from 'js-cookie'
+import {useHistory} from 'react-router-dom'
 
 function MainHeader() {
     const jwtToken = Cookies.get('jwt_token')
+    const history = useHistory()
+
 
     if (jwtToken === undefined) {
-        return <Redirect to='/login'/>
+        return <Redirect to='/login' />
+    }
+
+    const logout = () => {
+        Cookies.remove('jwt_token')
+        history.replace('/login')
     }
 
     return (
@@ -26,30 +34,27 @@ function MainHeader() {
                 <div className='vinay-profile-container'>
                     <p className='admin-name'>Hi Admin</p>
                     <div className='pop-up-container'>
-                        <Popup 
-                        
+                        <Popup
+
                             trigger={<button className='popup-button'>
                                 <img src="https://res.cloudinary.com/dpro7vkjb/image/upload/v1653557524/vinay_gbbdmp.png" alt="vinay boyina logo" className="vinay-image" />
                             </button>}
                             position='bottom left'>
 
-                                <div>
-                                    <Link style={{textDecoration: 'none'}} to='/profile'>
-                                        <p className='nav-main-heading-profile-text'>profile</p>
-                                    </Link>
-                                    <Link style={{textDecoration: 'none'}} to='/logout'>
-                                        <p className='nav-main-heading-profile-text'>logout</p>
-                                    </Link>
-                                </div>
+                            <div>
+                                <Link style={{ textDecoration: 'none' }} to='/profile'>
+                                    <p className='nav-main-heading-profile-text'>profile</p>
+                                </Link>
+                                <Link style={{ textDecoration: 'none' }} to='/login'>
+                                    <button type='button' onClick={logout} className='nav-main-heading-profile-text'>logout</button>
+                                </Link>
+                            </div>
                         </Popup>
                     </div>
                 </div>
 
             </nav>
-            <div className='vinay-container'>
-                <MenuIcons />
-                <AllZones />
-            </div>
+            
 
         </div>
     )

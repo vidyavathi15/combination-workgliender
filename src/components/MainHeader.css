@@ -57,6 +57,8 @@
 .nav-main-heading-profile-text {
     color: #b7b1b1;
     font-size: 25px;
+    border: none;
+    background-color: transparent;
 
 }
 .popup-button{

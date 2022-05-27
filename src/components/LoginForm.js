@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Header from './Header'
+import LoginHeader from './LoginHeader'
 import './LoginForm.css'
 import { Link, useHistory } from 'react-router-dom'
 import Cookies from 'js-cookie'
@@ -58,7 +58,7 @@ function LoginForm() {
 
   return (
     <div className='bg-container'>
-      <Header />
+      <LoginHeader />
       <div className='card-container'>
         <h1 className='heading'>Ensuring Social Distancing <br /> During <span className='covid-19'>COVID 19</span></h1>
         <form className='form-container' onSubmit={submitForm}>
@@ -68,7 +68,7 @@ function LoginForm() {
             <Link to='/forgotPassword' style={{ textDecoration: 'none' }}>
               <p className='forgot-password'>Forgot Password?</p>
             </Link>
-            <Link to='/GliderScans'>
+            <Link to='/allzones'>
               <button type='submit' className='sign-in-button'>SIGN IN</button>
             </Link>
           </div>

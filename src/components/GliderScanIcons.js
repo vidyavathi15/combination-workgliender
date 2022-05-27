@@ -7,7 +7,7 @@ import { AiOutlineMenu } from 'react-icons/ai'
 // import { RiVirusFill } from 'react-icons/ri'
 // import { IoMdBriefcase } from 'react-icons/io'
 import Attendence from './Attendence'
-import MenuIcons from './MenuIcons'
+import Sidebar from './Sidebar'
 import MiniDrawer from './MiniDrawer'
 
 
@@ -28,7 +28,7 @@ function GliderScanIcons() {
                             </button>
                         }
                         >
-                            <MenuIcons />
+                            <Sidebar />
                         </Popup>
 
 

@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import Header from'./Header'
+import LoginHeader from'./LoginHeader'
 import './ForgotPassword.css'
 import {Link} from 'react-router-dom'
 
@@ -13,7 +13,7 @@ function ForgotPassword() {
   return (
     
       <div className='bg-container'>
-      <Header />
+      <LoginHeader />
       <div className='card-container'>
         <div className='card-inner-container'>
       <h1 className='heading'>Forgot Password </h1>

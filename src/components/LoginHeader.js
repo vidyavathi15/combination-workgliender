@@ -1,6 +1,6 @@
-import './Header.css';
+import './LoginHeader.css';
 
-function Header() {
+function LoginHeader() {
     return (
         <nav className='nav-header'>
             <h1 className="glider-scan"> Glider Scan</h1>
@@ -9,4 +9,4 @@ function Header() {
     );
 }
 
-export default Header;
+export default LoginHeader;
